@@ -1,0 +1,43 @@
+--Find out the number of each type of room
+
+--SELECT  COUNT([Room Type]), [Room Type]
+--FROM Airbnb_NYC_data$
+--GROUP BY [Room Type]
+
+--Find out the average room price, per night, of an Airbnb listing in NYC
+
+--SELECT AVG(Price) AS AvgPriceinNYC
+--FROM Airbnb_NYC_data$
+
+--Find out the rounded average room price, per night, of an Airnb listing in NYC
+
+--SELECT ROUND(AVG(price), 0) AS AvgPriceinNYC
+--FROM Airbnb_NYC_data$
+
+--Find out the total listings by Borough
+
+--SELECT SUM([Host Total Listings Count]), Borough
+--FROM Airbnb_NYC_data$
+--GROUP by Borough
+--ORDER by SUM([Host Total Listings Count])
+
+--Find out average room price, per night, of an Airbnb in each NYC borough
+
+--SELECT Borough, AVG(Price) AS Average_Price
+--FROM Airbnb_NYC_data$
+--GROUP by Borough
+--ORDER by AVG(Price) DESC
+
+--Find out average room price by type of room
+
+--SELECT [Room Type], AVG(price) AS Average_Price
+--FROM Airbnb_NYC_data$
+--GROUP by [Room Type]
+--ORDER by AVG(Price) DESC
+
+--Find out total reviews by Borough
+
+--SELECT Borough, SUM([Number of Reviews])
+--FROM Airbnb_NYC_data$
+--GROUP by Borough
+--ORDER by SUM([Number of Reviews]) DESC
